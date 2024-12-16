@@ -1,7 +1,7 @@
 function _init()
   countdown = Countdown.new()
   game = Game.new()
-  hero = Hero.new()
+  player = Player.new()
 
   game.set_overworld()
 end

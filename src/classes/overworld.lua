@@ -8,7 +8,7 @@ Overworld = {
 
     obj.update = function()
       if btnp(🅾️) then
-        game.set_battle()
+        game.set_battle(1)
       end
     end
 

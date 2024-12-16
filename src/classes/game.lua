@@ -14,8 +14,8 @@ Game = {
       end
     end
 
-    obj.set_battle = function()
-      local battle = Battle.new()
+    obj.set_battle = function(level)
+      local battle = Battle.new(level)
       battle.setup()
       game.current_mode = battle
     end
