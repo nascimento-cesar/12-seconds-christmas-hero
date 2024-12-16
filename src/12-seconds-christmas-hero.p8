@@ -2,6 +2,7 @@ pico-8 cartridge // http://www.pico-8.com
 version 42
 __lua__
 #include classes/countdown.lua
+#include classes/hero.lua
 #include draw.lua
 #include init.lua
 #include update.lua

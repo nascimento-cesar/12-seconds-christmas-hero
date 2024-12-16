@@ -1,3 +1,4 @@
 function _init()
-  countdown = Countdown:new()
+  countdown = Countdown.new()
+  hero = Hero.new()
 end
