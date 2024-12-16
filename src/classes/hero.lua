@@ -1,8 +1,8 @@
 Hero = {
   new = function()
     local obj = {
-      defeated = false,
       hp = 100,
+      is_defeated = false,
       level = 1,
       power = 1,
       speed = 1,
@@ -20,7 +20,7 @@ Hero = {
 
     obj.damage = function(dmg)
       obj.hp -= dmg
-      obj.defeated = obj.hp <= 0 or false
+      obj.is_defeated = obj.hp <= 0 or false
     end
 
     obj.reset_position = function()

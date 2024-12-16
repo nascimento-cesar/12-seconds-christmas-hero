@@ -3,5 +3,5 @@ function _init()
   game = Game.new()
   hero = Hero.new()
 
-  game.current_mode = Overworld.new()
+  game.set_overworld()
 end

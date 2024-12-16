@@ -1,7 +1,9 @@
 Game = {
   new = function()
     local obj = {
-      current_mode = nil
+      current_mode = nil,
+      dmg_bias = 5,
+      dmg_cap = 64
     }
 
     obj.draw = function()
@@ -10,6 +12,16 @@ Game = {
       if obj.current_mode then
         obj.current_mode.draw()
       end
+    end
+
+    obj.set_battle = function()
+      local battle = Battle.new()
+      battle.setup()
+      game.current_mode = battle
+    end
+
+    obj.set_overworld = function()
+      game.current_mode = Overworld.new()
     end
 
     obj.update = function()

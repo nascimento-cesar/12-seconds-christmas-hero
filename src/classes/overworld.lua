@@ -4,11 +4,12 @@ Overworld = {
 
     obj.draw = function()
       print("overworld", 62, 32, 7)
-      hero.draw()
     end
 
     obj.update = function()
-      hero.move(1)
+      if btnp(🅾️) then
+        game.set_battle()
+      end
     end
 
     return obj
