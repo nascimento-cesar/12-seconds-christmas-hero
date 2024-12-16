@@ -1,5 +1,4 @@
 function _draw()
   cls()
-  countdown.draw()
-  hero.draw()
+  game.draw()
 end
