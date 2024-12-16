@@ -4,6 +4,7 @@ __lua__
 #include classes/countdown.lua
 #include classes/game.lua
 #include classes/hero.lua
+#include classes/overworld.lua
 #include draw.lua
 #include init.lua
 #include update.lua

@@ -6,12 +6,18 @@ Game = {
 
     obj.draw = function()
       countdown.draw()
-      hero.draw(1)
+
+      if obj.current_mode then
+        obj.current_mode.draw()
+      end
     end
 
     obj.update = function()
       countdown.update()
-      hero.move(1)
+
+      if obj.current_mode then
+        obj.current_mode.update()
+      end
     end
 
     return obj
